@@ -2,8 +2,9 @@ import {FiPlus, FiX} from "react-icons/fi"
 import {Container} from "./styles"
 
 export function Noteitem({isNew, value, onClick, ...rest}){
+
   return(
-    <Container isNew={isNew}>
+    <Container $isnew={String(isNew)}>
       <input 
         type="text" 
         value={value}
@@ -21,4 +22,5 @@ export function Noteitem({isNew, value, onClick, ...rest}){
 
     </Container>
   )
+
 }
